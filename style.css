@@ -1489,3 +1489,29 @@ RESPONSIVE IMAGES
 }
 
 }
+
+/* =========================================================
+   MOBILE – ABOUT PAGE IMAGES
+   Show complete images without cropping
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .story-image,
+    .story-image-full,
+    .story-final-image {
+        height: auto;
+        overflow: visible;
+    }
+
+    .story-image img,
+    .story-image-full img,
+    .story-final-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        object-position: center;
+    }
+
+}
