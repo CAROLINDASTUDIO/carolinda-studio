@@ -1,0 +1,1491 @@
+/* =========================================
+   CAROLINDA STUDIO
+   Main Stylesheet
+========================================= */
+
+
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #242424;
+
+    background:
+        #f7f4ef;
+
+    line-height: 1.6;
+
+}
+
+
+/* ---------- COLORS ---------- */
+
+:root {
+
+    --black:
+        #171717;
+
+    --dark:
+        #242424;
+
+    --cream:
+        #f7f4ef;
+
+    --beige:
+        #e9e1d6;
+
+    --gold:
+        #b69a62;
+
+    --white:
+        #ffffff;
+
+    --text:
+        #333333;
+
+}
+
+
+/* =========================================
+   TOP BAR
+========================================= */
+
+.topbar {
+
+    background:
+        var(--black);
+
+    color:
+        var(--white);
+
+    min-height:
+        38px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    padding:
+        0 5%;
+
+    font-size:
+        12px;
+
+}
+
+
+.socials {
+
+    display:
+        flex;
+
+    gap:
+        18px;
+
+}
+
+
+.socials a {
+
+    color:
+        white;
+
+    text-decoration:
+        none;
+
+    opacity:
+        0.8;
+
+}
+
+
+.socials a:hover {
+
+    opacity:
+        1;
+
+}
+
+
+.motto {
+
+    color:
+        var(--gold);
+
+}
+
+
+.follow {
+
+    opacity:
+        0.8;
+
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    padding:
+        22px 5%;
+
+    background:
+        rgba(247, 244, 239, 0.96);
+
+    position:
+        sticky;
+
+    top:
+        0;
+
+    z-index:
+        100;
+
+}
+
+
+.logo {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    letter-spacing:
+        4px;
+
+    font-family:
+        Georgia,
+        serif;
+
+}
+
+
+.logo span {
+
+    font-size:
+        28px;
+
+}
+
+
+.logo small {
+
+    font-size:
+        11px;
+
+    text-align:
+        center;
+
+    letter-spacing:
+        6px;
+
+}
+
+
+nav {
+
+    display:
+        flex;
+
+    gap:
+        28px;
+
+}
+
+
+nav a {
+
+    color:
+        var(--dark);
+
+    text-decoration:
+        none;
+
+    font-size:
+        12px;
+
+    letter-spacing:
+        1.5px;
+
+}
+
+
+nav a:hover {
+
+    color:
+        var(--gold);
+
+}
+
+
+.nav-button {
+
+    border:
+        1px solid var(--dark);
+
+    padding:
+        12px 20px;
+
+    text-decoration:
+        none;
+
+    color:
+        var(--dark);
+
+    font-size:
+        11px;
+
+    letter-spacing:
+        1px;
+
+}
+
+
+.nav-button:hover {
+
+    background:
+        var(--dark);
+
+    color:
+        white;
+
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+    min-height:
+        720px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    background:
+        var(--beige);
+
+}
+
+
+.hero-content {
+
+    padding:
+        120px 12%;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+}
+
+
+.welcome {
+
+    color:
+        var(--gold);
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-style:
+        italic;
+
+    font-size:
+        28px;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.hero h1 {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-weight:
+        400;
+
+    font-size:
+        clamp(55px, 7vw, 100px);
+
+    line-height:
+        0.95;
+
+    letter-spacing:
+        3px;
+
+}
+
+
+.hero-subtitle {
+
+    margin-top:
+        25px;
+
+    font-size:
+        17px;
+
+    letter-spacing:
+        1px;
+
+}
+
+
+.gold-line {
+
+    width:
+        50px;
+
+    height:
+        2px;
+
+    background:
+        var(--gold);
+
+    margin:
+        25px 0;
+
+}
+
+
+.hero-text {
+
+    color:
+        #555;
+
+    max-width:
+        430px;
+
+}
+
+
+.hero-buttons {
+
+    display:
+        flex;
+
+    gap:
+        15px;
+
+    margin-top:
+        30px;
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.button {
+
+    display:
+        inline-block;
+
+    padding:
+        15px 24px;
+
+    font-size:
+        11px;
+
+    letter-spacing:
+        1.5px;
+
+    text-decoration:
+        none;
+
+    transition:
+        0.3s;
+
+}
+
+
+.button.dark {
+
+    background:
+        var(--black);
+
+    color:
+        white;
+
+    border:
+        1px solid var(--black);
+
+}
+
+
+.button.dark:hover {
+
+    background:
+        transparent;
+
+    color:
+        var(--black);
+
+}
+
+
+.button.light {
+
+    border:
+        1px solid var(--dark);
+
+    color:
+        var(--dark);
+
+}
+
+
+.button.light:hover {
+
+    background:
+        var(--dark);
+
+    color:
+        white;
+
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.hero-image {
+
+    overflow:
+        hidden;
+
+}
+
+
+.hero-image img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    min-height:
+        720px;
+
+    object-fit:
+        cover;
+		
+		    object-position: center rigth;
+
+}
+
+
+/* =========================================
+   AREAS
+========================================= */
+
+.areas {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    background:
+        var(--cream);
+
+    padding:
+        50px 5%;
+
+}
+
+
+.area {
+
+    text-align:
+        center;
+
+    padding:
+        20px;
+
+    border-right:
+        1px solid #d5cec5;
+
+}
+
+
+.area:last-child {
+
+    border-right:
+        none;
+
+}
+
+
+.icon {
+
+    font-size:
+        30px;
+
+    margin-bottom:
+        15px;
+
+    color:
+        var(--gold);
+
+}
+
+
+.area h3 {
+
+    font-size:
+        13px;
+
+    letter-spacing:
+        2px;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.area p {
+
+    font-size:
+        13px;
+
+    color:
+        #666;
+
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    padding:
+        100px 10%;
+
+    gap:
+        70px;
+
+    align-items:
+        center;
+
+}
+
+
+.section-label {
+
+    color:
+        var(--gold);
+
+    font-size:
+        12px;
+
+    letter-spacing:
+        3px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.about h2,
+.books h2,
+.digital h2,
+.creative h2,
+.contact h2 {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(38px, 5vw, 65px);
+
+    font-weight:
+        400;
+
+    line-height:
+        1.1;
+
+    margin-bottom:
+        30px;
+
+}
+
+
+.about-text p {
+
+    margin-bottom:
+        20px;
+
+    color:
+        #555;
+
+}
+
+
+.about-image img {
+
+    width:
+        100%;
+
+    height:
+        100%; /*600px;*/
+
+    object-fit:
+        cover;
+
+    object-position: center center;
+
+}
+
+
+/* =========================================
+   BOOKS
+========================================= */
+
+.books {
+
+    padding:
+        110px 10%;
+
+    background:
+        var(--beige);
+
+}
+
+
+.section-header {
+
+    text-align:
+        center;
+
+    max-width:
+        700px;
+
+    margin:
+        auto auto 60px;
+
+}
+
+
+.section-header p {
+
+    color:
+        #555;
+
+}
+
+
+.book-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap:
+        40px;
+
+}
+
+
+.book-card {
+
+    background:
+        white;
+
+    transition:
+        0.3s;
+
+}
+
+
+.book-card:hover {
+
+    transform:
+        translateY(-8px);
+
+}
+
+
+.book-card img {
+
+    width:
+        100%;
+
+    height:
+        550px;
+
+    object-fit:
+        cover;
+
+    object-position: top center;
+
+}
+
+
+.book-content {
+
+    padding:
+        30px;
+
+}
+
+
+.book-category {
+
+    color:
+        var(--gold);
+
+    font-size:
+        11px;
+
+    letter-spacing:
+        2px;
+
+    margin-bottom:
+        12px;
+
+}
+
+
+.book-card h3 {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        28px;
+
+    font-weight:
+        400;
+
+    margin-bottom:
+        12px;
+
+}
+
+
+/* =========================================
+   DIGITAL
+========================================= */
+
+.digital {
+
+    background:
+        var(--black);
+
+    color:
+        white;
+
+    padding:
+        130px 15%;
+
+}
+
+
+.digital-content {
+
+    max-width:
+        700px;
+
+}
+
+
+.digital-content p {
+
+    color:
+        #d0d0d0;
+
+    margin-bottom:
+        30px;
+
+}
+
+
+/* =========================================
+   CREATIVE
+========================================= */
+
+.creative {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    align-items:
+        center;
+
+}
+
+
+.creative-image img {
+
+    width:
+        100%;
+
+    height:
+        /*650px;*/
+		50%;
+
+    object-fit:
+        cover;
+
+    object-position: top center;
+
+}
+
+
+.creative-text {
+
+    padding:
+        15%;
+
+}
+
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.quote {
+
+    background:
+        var(--black);
+
+    color:
+        var(--white);
+
+    padding:
+        45px 10%;
+
+    text-align:
+        center;
+
+}
+
+
+.quote p {
+
+    font-family:
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(24px, 4vw, 40px);
+
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact {
+
+    text-align:
+        center;
+
+    padding:
+        120px 10%;
+
+}
+
+
+.contact h2 {
+
+    max-width:
+        750px;
+
+    margin:
+        0 auto 20px;
+
+}
+
+
+.contact p {
+
+    margin-bottom:
+        30px;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    background:
+        #111;
+
+    color:
+        white;
+
+    text-align:
+        center;
+
+    padding:
+        40px;
+
+}
+
+
+.footer-logo {
+
+    font-family:
+        Georgia,
+        serif;
+
+    letter-spacing:
+        3px;
+
+    font-size:
+        22px;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+footer p {
+
+    color:
+        #888;
+
+    font-size:
+        12px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    nav {
+
+        display:
+            none;
+
+    }
+
+
+    .hero {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .hero-content {
+
+        min-height:
+            650px;
+
+    }
+
+
+    .hero-image img {
+
+        min-height:
+            500px;
+
+    }
+
+
+    .areas {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .area {
+
+        border:
+            none;
+
+    }
+
+
+    .about {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .book-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .creative {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .topbar {
+
+        padding:
+            10px 20px;
+
+        font-size:
+            10px;
+
+    }
+
+
+    .motto {
+
+        display:
+            none;
+
+    }
+
+
+    .navbar {
+
+        padding:
+            18px 20px;
+
+    }
+
+
+    .nav-button {
+
+        padding:
+            10px 14px;
+
+    }
+
+
+    .hero-content {
+
+        padding:
+            80px 8%;
+
+    }
+
+
+    .areas {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        padding:
+            30px 5%;
+
+    }
+
+
+    .about,
+    .books,
+    .contact {
+
+        padding:
+            70px 8%;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   ABOUT PAGE – CAROLINDA STUDIO
+   ========================================================= */
+
+.about-story-hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 8%;
+    background: #f4efe6;
+}
+
+.about-story-hero .hero-content {
+    max-width: 800px;
+}
+
+.about-story-hero h1 {
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    line-height: 0.95;
+    margin: 20px 0;
+}
+
+.about-story-hero .hero-text {
+    max-width: 600px;
+}
+
+
+/* MAIN STORY */
+
+.story-page {
+    background: #f8f5ef;
+}
+
+.story-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 110px 30px;
+}
+
+.story-section + .story-section {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.story-section h2 {
+    font-size: clamp(2.2rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    margin: 15px 0 40px;
+}
+
+.story-section p {
+    max-width: 760px;
+    font-size: 1.08rem;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+
+/* SECTION LABEL */
+
+.story-section .section-label,
+.story-welcome .section-label {
+    letter-spacing: 0.2em;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+
+/* BOOK BUTTON */
+
+.story-section .button {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+
+/* FAITH */
+
+.story-faith {
+    text-align: center;
+    background: #eee8dc;
+    max-width: none;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.story-faith p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story-signature {
+    margin: 55px auto 0;
+    max-width: 650px;
+}
+
+.story-signature p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+
+/* WELCOME */
+
+.story-welcome {
+    text-align: center;
+    padding: 130px 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.story-welcome h2 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1;
+    margin: 20px 0 35px;
+}
+
+.story-welcome > p:not(.section-label) {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+
+/* BUTTON AREA */
+
+.story-welcome .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* LINKS IN FOOTER */
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .about-story-hero {
+        min-height: 60vh;
+        padding: 80px 25px;
+    }
+
+    .about-story-hero h1 {
+        font-size: clamp(3rem, 15vw, 5rem);
+    }
+
+    .story-section {
+        padding: 75px 25px;
+    }
+
+    .story-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+
+    .story-section p {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+
+    .story-faith {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .story-signature p {
+        font-size: 1.25rem;
+    }
+
+    .story-welcome {
+        padding: 90px 25px;
+    }
+
+    .story-welcome h2 {
+        font-size: 2.7rem;
+    }
+
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 480px) {
+
+    .about-story-hero {
+        padding: 70px 20px;
+    }
+
+    .story-section {
+        padding: 65px 20px;
+    }
+
+    .story-section h2 {
+        font-size: 2.2rem;
+    }
+
+    .story-welcome {
+        padding: 75px 20px;
+    }
+
+}
+
+/* =========================================================
+ABOUT PAGE – ADDITIONAL IMAGES
+========================================================= */
+
+.story-image-full {
+width: 100%;
+height: 70vh;
+overflow: hidden;
+object-position: center center;
+}
+
+.story-image-full img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+.story-with-image {
+max-width: 1200px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 70px;
+align-items: center;
+}
+
+.story-with-image.reverse .story-image {
+order: -1;
+}
+
+.story-image {
+width: 100%;
+/*height: 520px;*/
+height: 100%;
+overflow: hidden;
+}
+
+.story-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+.story-content {
+width: 100%;
+}
+
+.story-final-image {
+height: 65vh;
+}
+
+/* =========================================================
+RESPONSIVE IMAGES
+========================================================= */
+
+@media (max-width: 768px) {
+
+
+.story-with-image {
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.story-with-image.reverse .story-image {
+    order: 0;
+}
+
+.story-image {
+    height: 400px;
+}
+
+.story-image-full {
+    height: 55vh;
+}
+
+
+}
+
+@media (max-width: 480px) {
+
+
+.story-image {
+    height: 330px;
+}
+
+.story-image-full {
+    height: 45vh;
+}
+
+}
