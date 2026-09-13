@@ -1880,3 +1880,320 @@ RESPONSIVE IMAGES
     }
 
 }
+
+/* =========================================================
+   CAROLINDA STUDIO
+   DIGITAL LIBRARY PAGE  LINDA SOMMER
+   ========================================================= */
+
+.digital-library-page {
+    background: #f7f4ef;
+}
+
+
+/* ---------------------------------------------------------
+   HERO
+   --------------------------------------------------------- */
+
+.library-hero {
+    min-height: 62vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #214437;
+    padding: 100px 25px;
+}
+
+.library-hero-content {
+    max-width: 900px;
+}
+
+.library-hero .section-label {
+    color: #d2b477;
+}
+
+.library-hero h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 1;
+    font-weight: 400;
+    color: #fff;
+    margin: 25px 0;
+}
+
+.library-hero-text {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 23px;
+    line-height: 1.6;
+    color: #e9e4da;
+}
+
+
+/* ---------------------------------------------------------
+   FEATURED STORY
+   --------------------------------------------------------- */
+
+.library-featured {
+    padding: 120px 8%;
+    background: #f7f4ef;
+    text-align: center;
+}
+
+.library-featured-inner {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.library-label {
+    color: #b3945b;
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.library-featured h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(55px, 7vw, 90px);
+    line-height: 1;
+    font-weight: 400;
+    color: #214437;
+    margin: 0 0 25px;
+}
+
+.story-subtitle {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    line-height: 1.6;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 60px;
+}
+
+.story-introduction {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.story-introduction p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+
+/* ---------------------------------------------------------
+   STORY
+   --------------------------------------------------------- */
+
+.library-story {
+    background: #fff;
+    padding: 120px 8%;
+}
+
+.library-story-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.story-heading {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 90px;
+}
+
+.story-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(45px, 6vw, 70px);
+    line-height: 1.1;
+    font-weight: 400;
+    color: #214437;
+    margin-top: 20px;
+}
+
+.story-text {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.story-text p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    line-height: 1.95;
+    color: #4d4d4d;
+    margin: 0 0 30px;
+}
+
+.story-text blockquote {
+    margin: 55px 0;
+    padding: 25px 35px;
+    border-left: 2px solid #b3945b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    line-height: 1.5;
+    font-style: italic;
+    color: #214437;
+}
+
+.story-text .story-ending {
+    margin-top: 70px;
+    color: #214437;
+    font-size: 22px;
+}
+
+.story-text .final-quote {
+    font-size: 34px;
+    color: #214437;
+    border-left: none;
+    border-top: 1px solid #d2b477;
+    border-bottom: 1px solid #d2b477;
+    padding: 40px 20px;
+    text-align: center;
+    font-style: normal;
+}
+
+
+/* ---------------------------------------------------------
+   MORE STORIES
+   --------------------------------------------------------- */
+
+.library-more {
+    padding: 130px 8%;
+    background: #e9e1d6;
+    text-align: center;
+}
+
+.library-more-inner {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.library-more h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(42px, 5vw, 65px);
+    line-height: 1.1;
+    font-weight: 400;
+    color: #214437;
+    margin: 20px 0 25px;
+}
+
+.library-more-inner > p:not(.section-label) {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .library-hero {
+        min-height: 55vh;
+        padding: 80px 25px;
+    }
+
+    .library-hero h1 {
+        font-size: 55px;
+    }
+
+    .library-hero-text {
+        font-size: 19px;
+    }
+
+    .library-featured {
+        padding: 85px 25px;
+    }
+
+    .library-featured h2 {
+        font-size: 55px;
+    }
+
+    .story-subtitle {
+        font-size: 20px;
+    }
+
+    .story-introduction p {
+        font-size: 18px;
+    }
+
+    .library-story {
+        padding: 85px 25px;
+    }
+
+    .story-heading {
+        margin-bottom: 60px;
+    }
+
+    .story-heading h2 {
+        font-size: 45px;
+    }
+
+    .story-text p {
+        font-size: 18px;
+        line-height: 1.85;
+    }
+
+    .story-text blockquote {
+        margin: 45px 0;
+        padding: 20px 22px;
+        font-size: 24px;
+    }
+
+    .story-text .final-quote {
+        font-size: 27px;
+        padding: 30px 15px;
+    }
+
+    .library-more {
+        padding: 90px 25px;
+    }
+
+    .library-more h2 {
+        font-size: 42px;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   SMALL MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+    .library-hero {
+        min-height: 50vh;
+    }
+
+    .library-hero h1 {
+        font-size: 45px;
+    }
+
+    .library-featured h2 {
+        font-size: 45px;
+    }
+
+    .story-heading h2 {
+        font-size: 38px;
+    }
+
+    .story-text p {
+        font-size: 17px;
+    }
+
+    .story-text blockquote {
+        font-size: 21px;
+    }
+
+    .story-text .final-quote {
+        font-size: 23px;
+    }
+
+}
