@@ -2197,3 +2197,386 @@ RESPONSIVE IMAGES
     }
 
 }
+
+
+/* =========================================================
+   EPUB-FRIENDLY BOOK CHAPTER
+   CHAPTER 1 — THE GIRL WHO DREAMED
+   ========================================================= */
+
+.chapter-page {
+    background: var(--cream, #f7f4ef);
+    color: var(--black, #171717);
+}
+
+
+/* ---------------------------------------------------------
+   BOOK HEADER
+   --------------------------------------------------------- */
+
+.book-header {
+    width: 100%;
+    border-bottom: 1px solid rgba(23, 23, 23, 0.08);
+    background: rgba(247, 244, 239, 0.96);
+}
+
+.book-navigation {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 22px 24px;
+}
+
+.book-nav-back {
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #6f6a63;
+    transition: color 0.3s ease;
+}
+
+.book-nav-back:hover {
+    color: #b69a62;
+}
+
+
+/* ---------------------------------------------------------
+   CHAPTER CONTAINER
+   --------------------------------------------------------- */
+
+.book-chapter {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 90px 30px 110px;
+}
+
+.book-chapter article {
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------------
+   CHAPTER HEADER
+   --------------------------------------------------------- */
+
+.chapter-header {
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.chapter-number {
+    margin-bottom: 18px;
+    color: #b69a62;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+}
+
+.chapter-header h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 7vw, 5.8rem);
+    font-weight: 400;
+    line-height: 1.02;
+    color: #171717;
+}
+
+
+/* ---------------------------------------------------------
+   CHAPTER SECTIONS
+   --------------------------------------------------------- */
+
+.chapter-section {
+    margin-bottom: 75px;
+}
+
+.chapter-section h2 {
+    margin: 0 0 32px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 400;
+    line-height: 1.15;
+    color: #171717;
+}
+
+.chapter-section p {
+    margin: 0 0 1.45em;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.12rem;
+    line-height: 1.95;
+    color: #302e2b;
+}
+
+.chapter-section p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   IMPORTANT SHORT LINES
+   --------------------------------------------------------- */
+
+.chapter-section p:has(+ p) {
+    /* Kept intentionally subtle.
+       The main text remains EPUB-friendly and readable. */
+}
+
+
+/* ---------------------------------------------------------
+   QUOTES
+   --------------------------------------------------------- */
+
+.chapter-quote {
+    margin: 42px 0;
+    padding: 28px 30px;
+    border-left: 2px solid #b69a62;
+    background: rgba(233, 225, 214, 0.45);
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.65rem;
+    line-height: 1.45;
+    font-style: italic;
+    color: #171717;
+}
+
+.chapter-quote-final {
+    margin-top: 45px;
+    font-size: 1.9rem;
+}
+
+
+/* ---------------------------------------------------------
+   FINAL REFLECTION
+   --------------------------------------------------------- */
+
+.chapter-reflection {
+    margin-top: 100px;
+    padding: 65px 55px;
+    background: #e9e1d6;
+    text-align: center;
+}
+
+.chapter-reflection-label {
+    margin-bottom: 22px;
+    color: #b69a62;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+.chapter-reflection h2 {
+    max-width: 650px;
+    margin: 0 auto 35px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.chapter-reflection p:not(.chapter-reflection-label) {
+    max-width: 650px;
+    margin: 0 auto 1.35em;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.08rem;
+    line-height: 1.85;
+    color: #302e2b;
+}
+
+
+/* ---------------------------------------------------------
+   CHAPTER END
+   --------------------------------------------------------- */
+
+.chapter-end {
+    margin-top: 90px;
+    padding-top: 35px;
+    border-top: 1px solid rgba(23, 23, 23, 0.12);
+    text-align: center;
+}
+
+.chapter-end p {
+    margin-bottom: 15px;
+    color: #6f6a63;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.chapter-end a {
+    color: #171717;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #b69a62;
+    padding-bottom: 5px;
+}
+
+.chapter-end a:hover {
+    color: #b69a62;
+}
+
+
+/* ---------------------------------------------------------
+   SITE FOOTER
+   --------------------------------------------------------- */
+
+.chapter-page .site-footer {
+    padding: 40px 24px;
+    text-align: center;
+    background: #171717;
+    color: #ffffff;
+}
+
+.chapter-page .site-footer p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .book-navigation {
+        padding: 18px 20px;
+    }
+
+    .book-chapter {
+        padding: 65px 22px 80px;
+    }
+
+    .chapter-header {
+        margin-bottom: 60px;
+    }
+
+    .chapter-header h1 {
+        font-size: clamp(2.7rem, 13vw, 4.2rem);
+    }
+
+    .chapter-section {
+        margin-bottom: 60px;
+    }
+
+    .chapter-section h2 {
+        margin-bottom: 25px;
+    }
+
+    .chapter-section p {
+        font-size: 1.04rem;
+        line-height: 1.85;
+    }
+
+    .chapter-quote {
+        margin: 35px 0;
+        padding: 22px 22px;
+        font-size: 1.4rem;
+    }
+
+    .chapter-quote-final {
+        font-size: 1.6rem;
+    }
+
+    .chapter-reflection {
+        margin-top: 75px;
+        padding: 45px 24px;
+    }
+
+    .chapter-reflection h2 {
+        font-size: 1.9rem;
+    }
+
+    .chapter-reflection p:not(.chapter-reflection-label) {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .chapter-end {
+        margin-top: 70px;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   PRINT / EPUB-LIKE READING
+   --------------------------------------------------------- */
+
+@media print {
+
+    .book-header,
+    .chapter-end,
+    .site-footer {
+        display: none;
+    }
+
+    .book-chapter {
+        max-width: none;
+        padding: 0;
+    }
+
+    .chapter-section {
+        page-break-inside: avoid;
+    }
+
+    .chapter-reflection {
+        page-break-inside: avoid;
+    }
+}
+
+/* =========================================================
+   CHAPTER 1 BUTTON
+   ========================================================= */
+
+.chapter-link {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.book-button {
+    display: inline-block;
+    padding: 15px 30px;
+
+    background: #171717;
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+
+    border: 1px solid #171717;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.book-button:hover {
+    background: transparent;
+    color: #171717;
+    border-color: #b69a62;
+}
+
+@media (max-width: 768px) {
+
+    .chapter-link {
+        margin-top: 25px;
+    }
+
+    .book-button {
+        width: 100%;
+        max-width: 300px;
+        padding: 14px 20px;
+    }
+}
