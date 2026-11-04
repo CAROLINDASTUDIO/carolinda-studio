@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Die Hirtin und ihre Wünsche, a magical German fairy tale written by Patricia Zumaita and published when its young author was just 11 years old.">
+  <meta name="theme-color" content="#f7f4ef">
+  <title>Die Hirtin und ihre Wünsche | CAROLINDA STUDIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f7f4ef;--bg-soft:#eee8de;--ink:#211e19;--muted:#746d62;--gold:#b69a62;--gold-dark:#92743d;--line:rgba(182,154,98,.32);--white:#fffdfa}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,sans-serif;line-height:1.75}a{color:inherit}
+    .topbar{min-height:42px;padding:8px 6vw;display:flex;align-items:center;justify-content:space-between;gap:18px;color:var(--muted);font-size:11px;letter-spacing:.08em;border-bottom:1px solid var(--line)}
+    .motto{color:var(--gold-dark);font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;letter-spacing:.02em}
+    .nav{padding:22px 6vw;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}.logo{text-decoration:none;font-family:'Cormorant Garamond',serif;font-size:25px;font-weight:700;letter-spacing:.08em;white-space:nowrap}.logo span{color:var(--gold-dark);font-weight:500}
+    .menu{display:flex;flex-wrap:wrap;gap:22px;justify-content:flex-end}.menu a{text-decoration:none;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.menu a:hover{color:var(--gold-dark)}
+    .hero{min-height:650px;padding:85px 8vw;display:grid;grid-template-columns:minmax(260px,.85fr) minmax(320px,1.15fr);align-items:center;gap:clamp(45px,8vw,120px);background:radial-gradient(circle at 20% 45%,rgba(182,154,98,.13),transparent 34%),linear-gradient(135deg,var(--bg),#fbf9f5 60%,var(--bg-soft))}
+    .portrait-wrap{max-width:420px;width:100%;margin:0 auto}.portrait-placeholder{min-height:500px;aspect-ratio:4/5;border:1px solid rgba(182,154,98,.7);outline:1px solid rgba(182,154,98,.3);outline-offset:9px;background:linear-gradient(145deg,rgba(255,255,255,.55),rgba(238,232,222,.8)),repeating-linear-gradient(135deg,transparent 0 18px,rgba(182,154,98,.045) 18px 19px);display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;color:var(--muted)}
+    .portrait-placeholder .inner{max-width:260px}.portrait-placeholder .symbol{display:block;color:var(--gold);font-size:38px;margin-bottom:16px}.portrait-placeholder strong{display:block;color:var(--gold-dark);font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600}.portrait-placeholder small{display:block;margin-top:8px;font-size:11px;line-height:1.7}
+    .eyebrow{color:var(--gold-dark);font-size:10px;font-weight:700;letter-spacing:.28em;text-transform:uppercase}h1,h2{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1.02}h1{margin:20px 0 12px;font-size:clamp(48px,6.3vw,82px)}.subtitle{margin:0 0 26px;color:var(--muted);font-family:'Cormorant Garamond',serif;font-size:clamp(23px,2.5vw,31px);line-height:1.25}.intro{max-width:650px;font-size:15px;color:#514b42}
+    .author-note{display:inline-block;margin:16px 0 26px;padding:10px 16px;border-left:2px solid var(--gold);background:rgba(182,154,98,.09);color:var(--gold-dark);font-size:12px;letter-spacing:.04em}.buttons{display:flex;flex-wrap:wrap;gap:13px;margin-top:26px}.btn{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:12px 22px;border:1px solid var(--gold);text-decoration:none;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:.2s ease}.btn.gold{background:var(--gold);color:white}.btn.gold:hover{background:var(--gold-dark);border-color:var(--gold-dark)}.btn.outline{color:var(--gold-dark)}.btn.outline:hover{background:rgba(182,154,98,.1)}
+    .story{padding:105px 8vw;text-align:center;background:var(--white);border-block:1px solid var(--line)}.story-inner{max-width:850px;margin:auto}.story h2,.about h2,.amazon h2{margin:17px 0 24px;font-size:clamp(42px,5vw,64px)}.story p{max-width:760px;margin:0 auto 18px;color:#5e574e;font-size:15px}.story .lead{color:var(--ink);font-family:'Cormorant Garamond',serif;font-size:27px;line-height:1.35}.ornament{margin:30px 0;color:var(--gold);letter-spacing:.6em}
+    .about{padding:100px 8vw;display:grid;grid-template-columns:.7fr 1.3fr;gap:70px;align-items:center}.age-card{padding:36px 25px;border:1px solid var(--line);text-align:center;background:rgba(255,255,255,.45)}.age-card .number{display:block;color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:100px;line-height:1}.age-card .label{color:var(--gold-dark);font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}.about p{color:var(--muted);font-size:14px}
+    .amazon{padding:90px 8vw;text-align:center;background:var(--bg-soft);border-top:1px solid var(--line)}.amazon p{max-width:650px;margin:0 auto 24px;color:var(--muted)}footer{padding:28px 6vw;text-align:center;color:var(--muted);font-size:10px;letter-spacing:.08em}
+    @media(max-width:800px){.topbar{justify-content:center;text-align:center}.topbar>div:last-child{display:none}.nav{align-items:flex-start;flex-direction:column}.menu{justify-content:flex-start;gap:12px 18px}.hero{grid-template-columns:1fr;padding:60px 7vw 75px;gap:55px}.portrait-wrap{max-width:330px}.portrait-placeholder{min-height:400px}.hero-copy{text-align:center}.buttons{justify-content:center}.about{grid-template-columns:1fr;gap:35px;padding:75px 7vw}.age-card{max-width:330px;width:100%;margin:auto}.story,.amazon{padding:75px 7vw}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="motto">✦ Stories, imagination &amp; new beginnings.</div><div>CAROLINDA STUDIO · BOOKS</div></div>
+  <header class="nav">
+    <a class="logo" href="index.html">CAROLINDA <span>STUDIO</span></a>
+    <nav class="menu" aria-label="Main navigation"><a href="index.html">Home</a><a href="index.html#books">Books</a><a href="index.html#about">About</a><a href="mailto:carolindastudio@gmail.com">Contact</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="portrait-wrap">
+        <!-- Linda as author photo. Save it as images/young-author.jpg and replace this div with:         -->
+
+        <img src="images/young-author.jpg" alt="Portrait of the author" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--gold);">
+
+        <!-- Replace this placeholder with an approved author photo. Save it as images/young-author.jpg and replace this div with:
+        <div class="portrait-placeholder"><div class="inner"><span class="symbol">✧</span><strong>Author Portrait</strong><small>Image placeholder<br>Replace with a photograph of the author</small></div></div>       -->	  
+
+      </div>
+	  
+      <div class="hero-copy">
+        <div class="eyebrow">A Young Author's First Book</div>
+        <h1>Die Hirtin<br><em style="color:var(--gold-dark)">und ihre Wünsche</em></h1>
+        <p class="subtitle">The Shepherdess and Her Wishes</p>
+        <p class="intro">A magical German fairy tale about a kind shepherdess, seven sheep, an unexpected striped cat and a journey filled with extraordinary wishes, challenges and surprises.</p>
+        <div class="author-note">Written and published when the author was just 11 years old.</div>
+        <div class="buttons"><a class="btn gold" href="https://www.amazon.com/dp/B0B25L4P4V" target="_blank" rel="noopener noreferrer">Discover the book on Amazon</a><a class="btn outline" href="#story">Read the story</a></div>
+      </div>
+    </section>
+    <section class="story" id="story"><div class="story-inner">
+		
+      <div class="eyebrow">Once Upon a Time...</div><h2>A wish can change everything.</h2>
+      <p class="lead">A seemingly poor, but kind shepherdess sets out on an exciting, imaginative and humorous journey — and must learn to choose her wishes wisely.</p>
+      <div class="ornament">✧ ✦ ✧</div>
+      <p>At first, the shepherdess is close to despair because of the difficulties she faces. But her story does not end there. A series of trials awaits her, and along the way she receives unexpected help from other people and magical beings.</p>
+      <p>With courage and perseverance, she faces each challenge. Talking animals, mysterious magical numbers, and enchanted places and times make this fantastic tale an adventure full of wonder.</p>
+      <p>After passing the trials, the shepherdess is richly rewarded — in a story that celebrates thoughtful wishes, kindness and the courage to keep going.</p>
+      <div class="ornament">✧ ✦ ✧</div>
+	  
+<div class="portrait-wrap">
+  <img
+    src="images/shepherdess.jpg"
+    alt="The Shepherdess and Her Seven Sheep – A Magical Fairy Tale"
+    style="display:block;width:100%;aspect-ratio:4/5;
+    object-fit:cover;border:1px solid var(--gold);"
+  >
+</div>
+
+	  
+	  
+	  <p class="lead">A fairy tale full of imagination, warmth and unexpected magic.</p>
+    </div>
+
+	
+	
+	
+	</section>
+    <section class="about">
+      <div class="age-card"><span class="number">11</span><span class="label">Years old at publication</span></div>
+      <div><div class="eyebrow">The Young Author</div><h2>A story born from imagination.</h2>
+        <p>This book marks a special milestone: its author wrote and published it at the age of eleven. Under the author pseudonym <strong>Patricia Zumaita</strong>, she invites readers into a fairy-tale world of talking animals, magical numbers and meaningful wishes.</p>
+        <p>Her first book is a celebration of youthful creativity and the wonderful worlds that can grow from imagination.</p>
+        <p><span style="color:var(--gold-dark);font-weight:700">Author:</span> Linda Sommer with pseudonym Patricia Zumaita<br><span style="color:var(--gold-dark);font-weight:700">Edition:</span> German Edition · Kindle</p>
+        <p><a href="https://www.amazon.com/Patricia-Zumaita/e/B0HPCSRYH8/ref=dp_byline_cont_ebooks_1" target="_blank" rel="noopener noreferrer">View the author's Amazon page</a></p>
+      </div>
+    </section>
+    <section class="amazon"><div class="eyebrow">Begin the adventure</div><h2>Step into her fairy-tale world.</h2>
+      <p>Discover <em>Die Hirtin und ihre Wünsche: Die Hirtin mit Ihren sieben Schafen, denen ein gestreifter Kater erschien</em> — the German Kindle edition.</p>
+      <a class="btn gold" href="https://www.amazon.com/dp/B0B25L4P4V" target="_blank" rel="noopener noreferrer">View on Amazon</a>
+    </section>
+  </main>
+  <footer>© 2026 CAROLINDA STUDIO · Stories worth sharing.</footer>
+</body>
+</html>
