@@ -95,8 +95,9 @@ footer{position:relative;margin-top:90px;font-size:12px;letter-spacing:.28em;tex
 @media (max-width:560px){.grid{grid-template-columns:1fr}.tagline{font-size:30px}.track{font-size:32px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 
-/* ---------- Unterseiten (About, My First Book) ---------- */
-.page-hero{position:relative;padding:230px 80px 110px;overflow:hidden}
+/* ---------- Unterseiten (About, My First Book) ---------- 
+.page-hero{position:relative;padding:230px 110px;overflow:hidden} */
+.page-hero{position:relative;padding:10px 80px 110px;overflow:hidden}
 .page-hero .glow{left:-120px;top:60px;width:620px;height:620px}
 .page-hero>*{position:relative}
 .page-hero h1{font-size:clamp(60px,9vw,128px);line-height:.92;margin:24px 0 0;letter-spacing:-.01em}
